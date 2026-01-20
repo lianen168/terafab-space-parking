@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>terafab.space</title>
+  <meta name="description" content="The future of AI runs on space-based power. TeraFab.Space: orbital factories for intelligence at scale." />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Exo+2:wght@300;400&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(135deg, #000010, #0c0420);
+      color: #e0e8ff;
+      font-family: 'Exo 2', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Deep space starfield */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image:
+        radial-gradient(circle at 15% 25%, rgba(255, 255, 255, 0.8) 1px, transparent 1px),
+        radial-gradient(circle at 85% 70%, rgba(100, 200, 255, 0.6) 1px, transparent 1px),
+        radial-gradient(circle at 50% 40%, rgba(255, 100, 200, 0.5) 1px, transparent 1px);
+      background-size: 100px 100px, 120px 120px, 90px 90px;
+      opacity: 0.4;
+      z-index: -2;
+    }
+
+    .container {
+      text-align: center;
+      max-width: 800px;
+      padding: 2rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    h1 {
+      font-family: 'Orbitron', monospace;
+      font-size: 3.3rem;
+      letter-spacing: 2px;
+      margin-bottom: 1.6rem;
+      background: linear-gradient(to right, #ff2a6d, #05d9e8, #ffffff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: 0 0 20px rgba(5, 217, 232, 0.3);
+    }
+
+    .tagline {
+      font-size: 1.15rem;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+      color: #c0d6f0;
+    }
+
+    .orbital-core {
+      width: 120px;
+      height: 120px;
+      margin: 1.8rem auto;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(5, 217, 232, 0.15), transparent 70%);
+      border: 2px solid rgba(255, 42, 109, 0.4);
+      box-shadow:
+        0 0 30px rgba(5, 217, 232, 0.4),
+        inset 0 0 15px rgba(255, 42, 109, 0.2);
+      position: relative;
+      animation: rotateCore 25s linear infinite;
+    }
+
+    .orbital-core::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 20px;
+      height: 20px;
+      background: #05d9e8;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 0 15px #05d9e8;
+    }
+
+    @keyframes rotateCore {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .vision {
+      margin: 1.8rem 0;
+      color: #a0f0ff;
+      font-size: 1.05rem;
+      max-width: 640px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.6;
+    }
+
+    .price {
+      font-size: 1.4rem;
+      margin: 2rem 0;
+      color: #05d9e8;
+      font-weight: bold;
+    }
+
+    .contact {
+      margin-top: 2rem;
+      font-size: 1.05rem;
+      color: #b0e0ff;
+    }
+
+    .contact a {
+      color: #05d9e8;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 2.5rem;
+      font-size: 0.85rem;
+      color: #4a5568;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>TERAFAB.SPACE</h1>
+
+    <p class="tagline">
+      As Earth’s energy limits approach, the next AI revolution must be powered from orbit. The TeraFab moves to space.
+    </p>
+
+    <div class="orbital-core"></div>
+
+    <p class="vision">
+      Orbital solar arrays. Zero-gravity chip fabs. AI-run maintenance drones. This is not sci-fi—it’s the necessary next step.
+    </p>
+
+    <p class="tagline">
+      <strong>terafab.space</strong> represents the convergence of mega-scale AI infrastructure and space-based energy sovereignty.
+    </p>
+
+    <div class="price">
+      Price: $420 USD (3 monthly installments available)
+    </div>
+
+    <p class="contact">
+      Contact: <a href="mailto:ltzwin2021@gmail.com">ltzwin2021@gmail.com</a>
+    </p>
+
+    <footer>
+      TERAFAB + SPACE = INTELLIGENCE BUILT ON STARLIGHT
+    </footer>
+  </div>
+</body>
+</html>
